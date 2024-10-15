@@ -1,80 +1,86 @@
 <!DOCTYPE html>
-html lang="en"> <body> <table> 10 17 <tbody> 23 <td>20</td> 24 </tbody> <tfoot> X Week 6 33 34 <td Average Age</td> (d)22.5/td> </tr> 4/tfoot> <caption Personal Information/caption> </table> <form actions" 35 <label forw name Name:</label> < <input type="text" name"name" ide"name" 37 <label forw enail">Email:</label> <input types"email" nanes"email" ide"email" 1 30 39 <label fora password Password:</label> 48 <input types"password" names"password" ide"password"> <label fore happy" Are you happy?/label> 41 42 <input types"checkbox" names"happy" ide happy" 43 <input types"radio" names cold" ide <input type="radio" names"hot" ide, 44 45 <input typew"radio" names"slo ide 46 </fores style stylesheet 47 </body> </html> 48 initial-scale 49 50
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Store</title>
+    <title>Food Delivery Service</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our Online Store</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#order-form">Order Form</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="products">
-            <h2>Available Products</h2>
+
+    <h1>Welcome to Our Everest Restaurant!</h1>
+
+    <h2>Menu</h2>
+    <table>
+
+    <div class="menu">
+        <div class="menu-item">
             <table>
-                <thead>
-                    <tr>
-                        <th>Item Name</th>
-                        <th>Price</th>
-                        <th>Description</th>
-                        <th>Image</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Product rows will go here -->
-                </tbody>
+                <tr>
+                  <th>Food name</th>
+                  <th>Price</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                 <td>Momo</td>
+                 <td>12.99$</td>
+                 <td> Savory dumplings filled with meat or vegetables, often steamed or fried, and served with a tangy dipping sauce.</td>
+                </tr>
+                <tr>
+                  <td>Daal bhat</td>
+                  <td>13.99$</td>
+                  <td> A traditional South Asian meal consisting of lentil soup (daal) served with rice (bhat), often accompanied by vegetables and pickles.</td>
+                </tr>
+              <tr>
+                <td>Newari khaja set</td>
+                <td>14.99$</td>
+                <td> A traditional Nepali platter featuring an assortment of savory snacks, including fried meat, vegetables, and pickles, served with rice or lentils.</td>
+              </tr>
+              <tr>
+               <td>Sizzler</td>
+               <td>12.99$</td>
+               <td> A flavorful dish served on a hot plate, typically featuring grilled meat or vegetables, accompanied by rice, fries, and a variety of sauces.</td>
+              </tr>
+              <tr>
+                <td>pakauda</td>
+                <td>7.99$</td>
+                <td>**Pakauda**: Crispy, deep-fried fritters made from seasoned chickpea flour batter, often mixed with vegetables or spices, and served as a popular snack or appetizer.</td>
+              </tr>
             </table>
-        </section>
-        <section id="order-form">
-            <h2>Place Your Order</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+    <h2>Order Form</h2>
+    <div class="order-form">
+        <form id="orderForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
 
-                <label for="product">Select Product:</label>
-                <select id="product" name="product" required>
-                    <!-- Options will go here -->
-                </select>
+            <label for="item">Select Menu Item:</label>
+            <select id="item" required>
+                <option value="">--Please choose an option--</option>
+                <option value="momo">Momo</option>
+                <option value="Dal bhat">Dal bhat</option>
+                <option value="Newari khaja set">Newari khaja set</option>
+                <option value="Sizzler">Sizzler</option>
+                <option value="Pakauda">Pakauda</option>
+            </select>
 
-                <label for="quantity">Quantity:</label>
-                <input type="number" id="quantity" name="quantity" min="1" required>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1" required>
 
-                <button type="submit">Submit Order</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Our Online Store</p>
-    </footer>
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const item = document.getElementById('item').value;
+            const quantity = document.getElementById('quantity').value;
+
+            alert(`Thank you, ${name}! You've ordered ${quantity} x ${item}.`);
+        });
+    </script>
 </body>
-<tbody>
-    <tr>
-        <td>Product 1</td>
-        <td>$10.00</td>
-        <td>Description of product 1.</td>
-        <td><img src="product1.jpg" alt="Product 1" width="100"></td>
-    </tr>
-
-    <tr>
-        <td>Product 2</td>
-        <td>$15.00</td>
-        <td>Description of product 2.</td>
-        <td><img src="product2.jpg" alt="Product 2" width="100"></td>
-    </tr>
-
-    <!-- Add more products as needed -->
-</tbody>
-
 </html>
