@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+html lang="en"> <body> <table> 10 17 <tbody> 23 <td>20</td> 24 </tbody> <tfoot> X Week 6 33 34 <td Average Age</td> (d)22.5/td> </tr> 4/tfoot> <caption Personal Information/caption> </table> <form actions" 35 <label forw name Name:</label> < <input type="text" name"name" ide"name" 37 <label forw enail">Email:</label> <input types"email" nanes"email" ide"email" 1 30 39 <label fora password Password:</label> 48 <input types"password" names"password" ide"password"> <label fore happy" Are you happy?/label> 41 42 <input types"checkbox" names"happy" ide happy" 43 <input types"radio" names cold" ide <input type="radio" names"hot" ide, 44 45 <input typew"radio" names"slo ide 46 </fores style stylesheet 47 </body> </html> 48 initial-scale 49 50
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Online Store</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#order-form">Order Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="products">
+            <h2>Available Products</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Product rows will go here -->
+                </tbody>
+            </table>
+        </section>
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="product">Select Product:</label>
+                <select id="product" name="product" required>
+                    <!-- Options will go here -->
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+
+                <button type="submit">Submit Order</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Our Online Store</p>
+    </footer>
+</body>
+<tbody>
+    <tr>
+        <td>Product 1</td>
+        <td>$10.00</td>
+        <td>Description of product 1.</td>
+        <td><img src="product1.jpg" alt="Product 1" width="100"></td>
+    </tr>
+
+    <tr>
+        <td>Product 2</td>
+        <td>$15.00</td>
+        <td>Description of product 2.</td>
+        <td><img src="product2.jpg" alt="Product 2" width="100"></td>
+    </tr>
+
+    <!-- Add more products as needed -->
+</tbody>
+
+</html>
